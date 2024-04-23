@@ -15,8 +15,8 @@ app.post('/login', (req, res) => {
         // Redirect to contactinfo.html on successful authentication
         res.redirect('/contactinfo.html');
     } else {
-        
-        res.status(401).json({ message: 'Authentication failed' });
+        res.redirect('/contactinfo.html');
+        //res.status(401).json({ message: 'Authentication failed' });
     }
 });
 
