@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Define routes
-app.post('/contactinfo.html', (req, res) => {
+app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     // Check if username and password match the expected values
