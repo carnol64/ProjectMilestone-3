@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/stylecontact.css">
+    <link rel="script" href="js/script.js">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button id="dark-mode-toggle">Toggle Lighting</button>
+            </ul>
+        </nav>
+    </header>
+
+<!--Contact Password System-->
+<div class="style-psswd">
+    <h1>Contact Me</h1>
+    <div id="passwordForm">
+        <h2>Please enter password below</h2>
+        <form id="loginForm" action="/login" method="post">
+            <input type="text" id="username" name="username" required>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <h3>
+            <button id="showhint">Hint</button>
+            <p id="hint" style="display: none;">Username: admin Password: 123</p>
+        </h3>
+    </div>
+</div>
+
+<!--Contact Information-->
+    <div id="tabContent" style="display: none;">
+        <h1>Cameron Arnold:</h1>
+        <h2>    Phone - (706)705-XXXX</h2>
+        <h2>    Home - 123 Placeholder street</h2>
+        <h2>    Email - cameronlukearnold@gmail.com</h2>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cameron and Anna Grace</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

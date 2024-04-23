@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #ffffff; /* Light mode */
+    --text-color: #000000; 
+    --header-color: #c4a82b;
+    --headtext-color: #ffffff;
+    --foot-color: #c4a82b;
+    --foottext-color: #ffffff;
+    --button-color: #ffffff;
+    --buttontext-color: #000000;
+    --button1-color: #313131;
+    --buttontext1-color: #ffffff;
+}
+.dark-mode {
+    --bg-color: #313131; /* Dark mode */
+    --text-color: #ffffff;
+    --header-color: #85711b;
+    --headtext-color: #ffffff;
+    --foot-color: #85711b;
+    --foottext-color: #ffffff;
+    --button-color: #313131;
+    --buttontext-color: #ffffff;
+    --button1-color: #ffffff;
+    --buttontext1-color: #000000;
+}
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-color);
+    color: var(--headtext-color);
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    /* color: #fff; */
+    color: var(--headtext-color);
+    text-decoration: none;
+}
+
+footer {
+    background: var(--foot-color);
+    color: var(--foottext-color);
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+#dark-mode-toggle {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--buttontext-color);
+    padding: 5px 10px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#dark-mode-toggle:hover {
+    background-color: var(--button1-color);
+    color: var(--buttontext1-color);
+}
+
+#dark-mode-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); /* Example focus shadow */
+}
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
